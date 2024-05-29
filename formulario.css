@@ -1,0 +1,40 @@
+body {
+	background-color: #0a0a5c;
+	background-image: url(images/league-of-legends-pc-juego-cover.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: red;
+	margin: 0px;
+}
+
+div.contenedor {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	width: 50%;
+	border: 1px white solid;
+}
+
+nav {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	background-color: #4b0082;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	background: #fff;
+	display: inline;
+	border: 5px black solid;
+	padding: 10px;
+}
+
+a.navegador {
+	color: #b8860b;
+	text-decoration: none;
+}

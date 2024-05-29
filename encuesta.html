@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="icon" type="image/x-icon" href="images/lol.ico">
+	<link rel="StyleSheet" href="formulario.css" type="text/css">
+	<nav>
+		<ul>
+			<li><a href="index.html" class="navegador">Inicio</a></li>
+			<li><a href="campeones.html" class="navegador">Mis campeones</a></li>
+			<li><a href="objetos.html" class="navegador">Objetos</a></li>
+			<li><a href="encuesta.html" class="navegador">Encuesta de evaluación</a></li>
+		</ul>
+	</nav>
+</head>
+<body>
+	<div class="contenedor">
+		<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+			<p>¿Cuál es su nombre?</p>
+			<input type="name" name="Nombre" autofocus required>
+			<p>¿Cuál es su género?</p>
+			<input type="radio" name="sexo" value="Hombre">Hombre
+			<input type="radio" name="sexo" value="Mujer">Mujer
+			<input type="radio" name="sexo" value="Otro">Otro
+			<p>¿Cuál es su edad?</p>
+			<input type="number" name="Edad" min="18" max="100" required>
+			<p>¿Cuál es su email?</p>
+			<input type="email" name="Correo" required>
+			<p>Seleccione el servidor en el que juega</p>
+			<select name="servidor" required>
+				<option>EUW</option>
+				<option>EUNE</option>
+				<option>NA</option>
+				<option>LAN</option>
+				<option>LAS</option>
+				<option>KR</option>
+				<option>RU</option>
+				<option>TR</option>
+				<option>BR</option>
+				<option>OCE</option>
+			</select>
+			<br><br>
+			<textarea rows="10" cols="40" name="opinion" placeholder="Por favor, escribe aquí lo que opinas del League of Legends." required></textarea>
+			<br>
+			<input type="checkbox" name="terminos" value="Acepto los terminos y condiciones y doy mi consentimiento para compartir mis datos." required>Marca esta casilla para confirmar nuestros términos y condiciones, y aceptas compartir estos datos con nosotros.
+			<br><br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borrar">
+		</form>
+	</div>
+</body>

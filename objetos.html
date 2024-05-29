@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tienda del Lol</title>
+	<link rel="icon" type="image/x-icon" href="images/lol.ico">
+	<link rel="StyleSheet" href="items.css" type="text/css">
+	<script>
+		function mostrarTexto1(po1) {
+			var descripcion = document.getElementById("po1");
+			if (descripcion.style.display === 'none') {
+				descripcion.style.display = 'block';
+			}
+			else {
+				descripcion.style.display = 'none';
+			}
+		}
+	
+		function mostrarTexto2(po2) {
+			var descripcion = document.getElementById("po2");
+			if (descripcion.style.display === 'none') {
+				descripcion.style.display = 'block';
+			}
+			else {
+				descripcion.style.display = 'none';
+			}	
+		}
+		
+		function mostrarTexto3(po3) {
+			var descripcion = document.getElementById("po3");
+			if (descripcion.style.display === 'none') {
+				descripcion.style.display = 'block';
+			}
+			else {
+				descripcion.style.display = 'none';
+			}
+		}
+	</script>
+	<nav>
+		<ul>
+			<li><a href="index.html" class="navegador">Inicio</a></li>
+			<li><a href="campeones.html" class="navegador">Mis campeones</a></li>
+			<li><a href="objetos.html" class="navegador">Objetos</a></li>
+			<li><a href="encuesta.html" class="navegador">Encuesta de evaluación</a></li>
+		</ul>
+	</nav>
+</head>
+<body>
+	<h1><u>Tienda del lol</u></h1>
+	<h2><u>Míticos</u></h2>
+	<div class="global">
+		<div class="contenedor">
+			<img src="images/KrakenSlayer.jpg" id="obj1" onclick="mostrarTexto1()">
+			<div id="po1" class="fondo">
+				<h2><u>Mata Krakens</u></h2>
+				<p>+60 de daño de ataque</p>
+				<p>+25% de velocidad de ataque</p>
+				<p>+20% de probabilidad de crítico</p>
+				<p>Pasiva: Cada tercer ataque inflinge 80-240 (+30% del AD adicional) de daño verdadero adicional.</p>
+				<p>Pasiva mítica: Potencia otros objetos legendarios con +5% de velocidad de ataque.</p>
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="images/ImmortalShieldbow.jpg" id="obj2" onclick="mostrarTexto2()">
+			<div id="po2" class="fondo">
+				<h2><u>ArcoEscudo Inmortal</u></h2>
+				<p>+50 de daño de ataque</p>
+				<p>+15% de velocidad de ataque</p>
+				<p>+20% de probabilidad de crítico</p>
+				<p>+12% de robo de vida</p>
+				<p>Cuando recibes daño que te haga bajar del 30% de vida, obtienes un escudo de 150-500 de vida durante 3s y un 20% más de robo de vida durante 8s.</p>
+				<p>Pasiva mítica: Potencia objetos legendarios con +50 vida y +8 de daño de ataque.</p>
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="images/Galeforce.jpg" id="obj3" onclick="mostrarTexto3()">
+			<div id="po3" class="fondo">
+				<h2><u>Viento Huracanado</u></h2>
+				<p>+60 de daño de ataque</p>
+				<p>+15% de velocidad de ataque</p>
+				<p>+20% de probabilidad de crítico</p>
+				<p>Activa - Aguacero: Te deslizas hacia la dirección seleccionada y disparas tres misiles al enemigo con menos vida que se encuentre cerca de tu destino (prioriza campeones). Los misiles inflingen un total de (180 - 220 (según el nivel) + 45% del daño de ataque adicional) (60 segundos de enfriamiento).</p>
+				<p>Pasiva mítica: Potencia objetos legendarios con +2% de velocidad de movimiento.</p>
+			</div>
+		</div>
+	</div>
+	<h2><u>Legendarios</u></h2>
+	<div class="legendarios">
+		<abbr title="Filo infinito"><img src="images/Infinity_Edge.jpg"></abbr>
+		<abbr title="Sanguinaria"><img src="images/Bloodthirster.jpg"></abbr>
+		<abbr title="Recordatorio Mortal"><img src="images/Mortal_Reminder.jpg"></abbr>
+		<abbr title="Recuerdos de Lord Dominik"><img src="images/Lord_Dominik.jpg"></abbr>
+		<abbr title="Cañón de fuego rápido"><img src="images/Rapid_Fire.jpg"></abbr>
+		<abbr title="Huracán de Runaan"><img src="images/Runaan_Hurricane.jpg"></abbr>
+		<abbr title="Bailarín espectral"><img src="images/Phantom_Dancer.jpg"></abbr>
+		<abbr title="Puñal de statikk"><img src="images/Statikk_Shiv.jpg"></abbr>
+		<abbr title="Hoja del rey arruinado"><img src="images/Ruined_Blade.jpg"></abbr>
+		<abbr title="Cimitarra mercurial"><img src="images/Mercurial_Scimitar.jpg"></abbr>
+		<abbr title="Muramana"><img src="images/Muramana.jpg"></abbr>
+		<abbr title="Segador de esencias"><img src="images/Essence_Reaver.jpg"></abbr>
+		<abbr title="Hoja de furia Guinsoo"><img src="images/Guinsoo_Rageblade.jpg"></abbr>
+		<abbr title="Ángel guardián"><img src="images/Guardian_Angel.jpg"></abbr>
+	</div>
+</body>

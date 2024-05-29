@@ -1,0 +1,80 @@
+body {
+	background-color: #101031;
+	background-image: url(images/shop.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: #fff;
+	margin: 0px;
+}
+
+nav {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	background-color: #4b0082;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	background: #fff;
+	display: inline;
+	border: 5px black solid;
+	padding: 10px;
+}
+
+a.navegador {
+	color: #b8860b;
+	text-decoration: none;
+}
+
+h1, h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.global {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}
+
+div.contenedor {
+	display: inline;
+	margin: 5px;
+	transition: img .5s ease-in-out;
+}
+
+div {
+	display: none;
+}
+
+div.fondo {
+	background-color: #101031;
+	border: 2px #b8860b solid;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	border: 2px #d7b661 solid;
+}
+
+div.legendarios {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	left: 0px;
+	transform: translate(+50%);
+}
+
+div img:hover {
+	transform: scale(1.3);
+}
